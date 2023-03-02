@@ -63,13 +63,13 @@ let showWhosTheBoss = ()=>{
 jQuery(document).ready(function($){
     $('.startTheGame').click((e)=>{
         if($('.numberOfRounds').val() < 2){
-            alert('ch*t*ya he kya?');
+            alert('please enter how many rounds you will play.');
             return true;
         }
 
         let players = $('.playerNameHolder .playerName').toArray();
         if(players.length < 2){
-            alert('ch*t*ya he kya?');
+            alert('please bring more people.');
             return true;
         }
         $('.controlDiv').slideUp();
